@@ -57,3 +57,12 @@ SELECT name
 FROM Customer
 WHERE address IS NULL;
 ```
+
+
+### ORDER BY
+> 고객 ID를 기준으로 내림차순 검색
+```SQL
+SELECT *
+FROM Customer
+ORDER BY ID DESC;
+```
