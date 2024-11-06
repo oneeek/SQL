@@ -59,9 +59,11 @@ FROM FISH_INFO;
 NULL | IS NULL, IS NOT NULL
 복합 | AND, OR, NOT
 
-> 프로그래머스 <잡은 물고기의 평균 길이 구하기>
+> 프로그래머스 <이름이 있는 동물의 아이디>
 ```SQL
-
+SELECT ANIMAL_ID
+FROM ANIMAL_INS
+WHERE NAME IS NOT NULL;
 ```
 
 
