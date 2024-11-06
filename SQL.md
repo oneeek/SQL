@@ -52,16 +52,14 @@ FROM 테이블;
 NULL | IS NULL, IS NOT NULL
 복합 | AND, OR, NOT
 
-> 주소가 입력되지 않은 고객의 이름 검색
+> 프로그래머스 <잡은 물고기의 평균 길이 구하기>
 ```SQL
-SELECT name
-FROM Customer
-WHERE address IS NULL;
+
 ```
 
 
 ### ORDER BY
-> 고객 ID를 기준으로 내림차순 검색
+>고객 ID를 기준으로 내림차순 검색
 ```SQL
 SELECT *
 FROM Customer
