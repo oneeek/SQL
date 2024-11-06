@@ -17,3 +17,23 @@ ORDER BY 속성명 [ASC/DESC]
 ```
 - [x] ALL : 중복 허용 / DISTINCT : 중복 허용 X
 - [x] ASC : 오름차순(기본) / DESC : 내림차순
+
+
+### SELECT/FROM
+> 여러 속성 조회
+```SQL
+SELECT 속성1, 속성2
+FROM 테이블;
+```
+
+> 모든 속성 조회
+```SQL
+SELECT *
+FROM 테이블;
+```
+
+> 중복 없이 속성 조회
+```SQL
+SELECT DISTINCT 속성
+FROM 테이블;
+```
