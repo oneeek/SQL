@@ -8,6 +8,10 @@
 
 ## DML
 ```SQL
-SELECT 컬럼명
-FROM 테이블명;
+SELECT [ALL/DISTINCT] 속성명
+FROM 테이블명
+WHERE 검색조건
+GROUP BY 속성명
+HAVING 검색조건
+ORDER BY 속성명 [ASC/DESC]
 ```
