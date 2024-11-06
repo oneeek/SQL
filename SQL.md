@@ -8,6 +8,6 @@
 
 ## DML
 ```SQL
-SELECT price, bookname
-FROM Book;
+SELECT 컬럼명
+FROM 테이블명;
 ```
