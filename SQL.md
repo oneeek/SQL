@@ -15,5 +15,5 @@ GROUP BY 속성명
 HAVING 검색조건
 ORDER BY 속성명 [ASC/DESC]
 ```
--ALL:중복 허용 / DISTINCT:중복 허용 X
--ASC:오름차순(기본) / DESC:내림차순
+- [x] ALL:중복 허용 / DISTINCT:중복 허용 X
+- [x] ASC:오름차순(기본) / DESC:내림차순
