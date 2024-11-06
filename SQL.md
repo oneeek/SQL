@@ -17,6 +17,7 @@ ORDER BY 속성명 [ASC/DESC]
 ```
 - [x] ALL : 중복 허용 / DISTINCT : 중복 허용 X
 - [x] ASC : 오름차순(기본) / DESC : 내림차순
+- [x] WHERE : 그룹화 전 조건 / HAVING : 그룹화 후 조건
 
 
 ### SELECT/FROM
@@ -65,4 +66,13 @@ WHERE address IS NULL;
 SELECT *
 FROM Customer
 ORDER BY ID DESC;
+```
+
+
+### GROUP BY/HAVING
+> 
+```SQL
+SELECT *
+FROM Customer
+GROUP BY ID DESC;
 ```
