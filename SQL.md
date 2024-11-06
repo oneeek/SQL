@@ -51,9 +51,9 @@ FROM 테이블;
 NULL | IS NULL, IS NOT NULL
 복합 | AND, OR, NOT
 
-> 속성2 값이 없는 속성1 검색
+> 주소가 입력되지 않은 고객의 이름 검색
 ```SQL
-SELECT 속성1
-FROM 테이블
-WHERE 속성2 IS NULL;
+SELECT name
+FROM Customer
+WHERE address IS NULL;
 ```
