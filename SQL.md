@@ -70,9 +70,10 @@ ORDER BY ID DESC;
 
 
 ### GROUP BY/HAVING
-> 
+> 고객별 주문 수량이 2개 이상인 고객 검색
 ```SQL
-SELECT *
-FROM Customer
-GROUP BY ID DESC;
+SELECT ID, COUNT(*)
+FROM Order
+GROUP BY ID
+HAVING COUNT(ID) >= 2;
 ```
