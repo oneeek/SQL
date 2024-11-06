@@ -70,10 +70,8 @@ ORDER BY ID DESC;
 
 
 ### GROUP BY/HAVING
-> 고객별 주문 수량이 2개 이상인 고객 검색
+> 프로그래머스 <노선별 평균 역 사이 거리 조회하기>
 ```SQL
-SELECT ID, COUNT(*)
-FROM Order
-GROUP BY ID
-HAVING COUNT(ID) >= 2;
+
 ```
+
