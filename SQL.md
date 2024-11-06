@@ -54,7 +54,7 @@ NULL | IS NULL, IS NOT NULL
 
 
 
-
+A|B
 비교 | =, <>, <, <=, >, >=
 범위 | BETWEEN
 집합 | IN, NOT IN
