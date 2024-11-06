@@ -37,3 +37,14 @@ FROM 테이블;
 SELECT DISTINCT 속성
 FROM 테이블;
 ```
+
+
+### WHERE
+> 조건식 종류
+> - 비교 : =, <>, <, <=, >, >=
+> - 범위 : BETWEEN
+> - 집합 : IN, NOT IN
+> - 패턴 : LIKE
+> - NULL : IS NULL, IS NOT NULL
+> - 복합 : AND, OR, NOT
+
