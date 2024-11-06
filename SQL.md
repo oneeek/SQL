@@ -5,4 +5,9 @@
 - **DCL** : 데이터 제어어 (권한 부여, 회수)
 - **TCL** : 트랜잭션 제어어 (영구 반영, 작업 취소 및 복구)
 
+
 ## DML
+```SQL
+SELECT price, bookname
+FROM Book;
+```
