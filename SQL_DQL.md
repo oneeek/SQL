@@ -91,3 +91,5 @@ GROUP BY ROUTE
 ORDER BY ROUND(SUM(D_BETWEEN_DIST), 1) DESC;
 ```
 
+### 함수
+> 문자형 함수
