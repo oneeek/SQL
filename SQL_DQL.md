@@ -111,8 +111,8 @@ REPLACE(대상, 찾을 문자열, 바꿀 문자열) | 일치하는 문자열 치
 TRANSLATE(대상, 찾을 문자열, 바꿀 문자열) | 문자열 1:1 치환 | 바꿀 문자열 생략 불가 <br/> 빈 문자열 전달 : 전체 NULL
 
 - SQL Server
-> SUBSTR > SUBSTRING <br/>
-> LENGTH > LEN <br/>
-> INSTR > CHARINDEX <br/>
+SUBSTR > SUBSTRING <br/>
+LENGTH > LEN <br/>
+INSTR > CHARINDEX <br/>
 
 
