@@ -161,7 +161,9 @@ TO_DATE(문자, 포맷) | 문자를 포맷 형식에 맞게 읽어 날짜 데이
 FORMAT(날짜, 포맷) | 날짜의 포맷 형식 변경 | 포맷 'YYYY' 입력 : 문자 타입 '2024' 반환
 CAST(대상 AS 데이터 타입) | 대상을 주어진 데이터 타입으로 변환 | 
 
-
+- SQL Server <br/>
+TO_NUMBER, TO_DATE, TO_CHAR > CONVERT(포맷 전달) <br/>
+단순 변환은 주로 CAST 사용 <br/>
 
 
 
