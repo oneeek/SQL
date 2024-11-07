@@ -1,12 +1,16 @@
 ## SQL 기본문법
 
-- **DDL** : 데이터 정의어 (테이블 생성, 삭제, 변경)
-- **DML** : 데이터 조작어 (데이터 조회, 추가, 수정)
-- **DCL** : 데이터 제어어 (권한 부여, 회수)
-- **TCL** : 트랜잭션 제어어 (영구 반영, 작업 취소 및 복구)
+구분|종류
+:---:|:---:
+**DDL** | CREATE, ALTER, DROP, TRUNCATE
+**DML** | INSERT, DELETE, UPDATE, MERGE
+**DCL** | GRANT, REVOKE
+**TCL** | COMMIT, ROLLBACK
+**DQL** | SELECT
 
 
-## DML
+
+## DQL
 ```SQL
 SELECT [ALL/DISTINCT] 컬럼명
 FROM 테이블명
@@ -50,7 +54,7 @@ FROM FISH_INFO;
 ### WHERE
 > 조건식 종류
 
-분류|종류
+구분|종류
 :---:|:---:
 비교 | =, <>, <, <=, >, >=
 범위 | BETWEEN
