@@ -93,3 +93,8 @@ ORDER BY ROUND(SUM(D_BETWEEN_DIST), 1) DESC;
 
 ### 함수
 > 문자형 함수
+
+함수명|함수기능
+:---:|:---:
+LOWER(대상) | 문자열을 소문자로
+UPPER(대상) | 문자열을 대문자로
