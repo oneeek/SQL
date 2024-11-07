@@ -166,4 +166,29 @@ TO_NUMBER, TO_DATE, TO_CHAR > CONVERT(포맷 전달) <br/>
 단순 변환은 주로 CAST 사용 <br/>
 
 
+> 그룹함수
+
+함수명|함수기능|기타
+:---|:---|:---
+COUNT(대상) | 행의 수 | NULL 무시 연산 <br/> 전체 NULL : 0 반환
+SUM(대상) | 총 합 | NULL 무시 연산 <br/> 전체 NULL : 공집합 반환
+AVG(대상) | 평균 | NULL 무시 연산 <br/> 전체 NULL : 공집합 반환
+MIN(대상) | 최솟값 | NULL 무시 연산 <br/> 전체 NULL : 공집합 반환
+MAX(대상) | 최댓값 | NULL 무시 연산 <br/> 전체 NULL : 공집합 반환
+VARIANCE(대상) | 분산 | NULL 무시 연산 <br/> 전체 NULL : 공집합 반환
+STDDEV(대상) | 표준편차 | NULL 무시 연산 <br/> 전체 NULL : 공집합 반환
+
+- SQL Server <br/>
+VARIANCE > VAR <br/>
+STDDEV > STDEV <br/>
+
+
+> 변환함수
+
+함수명|함수기능|기타
+:---|:---|:---
+TO_NUMBER(문자) | 숫자 타입으로 변경 | 
+
+
+
 
