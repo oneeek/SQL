@@ -145,6 +145,11 @@ NEXT_DAY(날짜, n) | 주어진 날짜 이후 지정된 요일의 첫 날짜 | 1
 ROUND(날짜, 자리수) | 날짜 반올림 | 자리수 'MONTH' 입력: 월 이전자리에서 반올림 (16일부터 올림) 
 TRUNC(날짜, 자리수) | 날짜 버림 | 자리수 'MONTH' 입력: 월 이전자리에서 버림
 
+- SQL Server <br/>
+SYSDATE > GETDATE <br/>
+ADD_MONTHS > DATEADD(모든 단위 날짜 연산 가능) <br/>
+MONTHS_BETWEEN > DATEDIFF(두 날짜 사이의 년, 월, 일) <br/>
+
 
 
 
