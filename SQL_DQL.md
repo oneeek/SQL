@@ -110,9 +110,21 @@ LENGTH(대상) | 대상 문자열 길이 |
 REPLACE(대상, 찾을 문자열, 바꿀 문자열) | 일치하는 문자열 치환 및 삭제 | 바꿀 문자열 생략, 빈 문자열 전달 : 찾을 문자열 제거
 TRANSLATE(대상, 찾을 문자열, 바꿀 문자열) | 문자열 1:1 치환 | 바꿀 문자열 생략 불가 <br/> 빈 문자열 전달 : 전체 NULL
 
-- SQL Server
+- SQL Server <br/>
 SUBSTR > SUBSTRING <br/>
 LENGTH > LEN <br/>
 INSTR > CHARINDEX <br/>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
