@@ -25,19 +25,19 @@ ORDER BY 컬럼명 [ASC/DESC]
 
 
 ### SELECT/FROM
-> 여러 속성 조회
+> 여러 컬럼 조회
 ```SQL
 SELECT 컬럼1, 컬럼2
 FROM 테이블;
 ```
 
-> 모든 속성 조회
+> 모든 컬럼 조회
 ```SQL
 SELECT *
 FROM 테이블;
 ```
 
-> 중복 없이 속성 조회
+> 중복 없이 컬럼 조회
 ```SQL
 SELECT DISTINCT 컬럼
 FROM 테이블;
