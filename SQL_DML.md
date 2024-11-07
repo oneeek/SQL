@@ -8,10 +8,10 @@
 
 ## DML
 ```SQL
-SELECT [ALL/DISTINCT] 속성명
+SELECT [ALL/DISTINCT] 컬럼명
 FROM 테이블명
 WHERE 검색조건
-GROUP BY 속성명
+GROUP BY 컬럼명
 HAVING 검색조건
 ORDER BY 속성명 [ASC/DESC]
 ```
@@ -23,7 +23,7 @@ ORDER BY 속성명 [ASC/DESC]
 ### SELECT/FROM
 > 여러 속성 조회
 ```SQL
-SELECT 속성1, 속성2
+SELECT 컬럼1, 컬럼2
 FROM 테이블;
 ```
 
@@ -35,7 +35,7 @@ FROM 테이블;
 
 > 중복 없이 속성 조회
 ```SQL
-SELECT DISTINCT 속성
+SELECT DISTINCT 컬럼
 FROM 테이블;
 ```
 
