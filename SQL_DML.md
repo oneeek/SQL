@@ -17,7 +17,7 @@ FROM 테이블명
 WHERE 검색조건
 GROUP BY 컬럼명
 HAVING 검색조건
-ORDER BY 속성명 [ASC/DESC]
+ORDER BY 컬럼명 [ASC/DESC]
 ```
 - [x] ALL : 중복 허용 / DISTINCT : 중복 허용 X
 - [x] ASC : 오름차순(기본) / DESC : 내림차순
