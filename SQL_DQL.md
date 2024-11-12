@@ -276,14 +276,22 @@ CASE문 | 조건별 치환 및 연산 수행 |
 >CASE문 예제
 ```SQL
 SELECT SALE,
-       CASE WHEN SALE < 200 THEN 'A'
-            WHEN SALE < 300 THEN 'B'
+       CASE WHEN SALE = 200 THEN 'A'
+            WHEN SALE = 300 THEN 'B'
                             ELSE 'C'
        END AS GRADE
 FROM TRANSACTION;
 ```
 
-
+*같은 대상에 대해 일치하는 조건일 때
+```SQL
+SELECT SALE,
+       CASE SALE WHEN 200 THEN 'A'
+                 WHEN 300 THEN 'B'
+                          ELSE 'C'
+       END AS GRADE
+FROM TRANSACTION;
+```
 
 
 
