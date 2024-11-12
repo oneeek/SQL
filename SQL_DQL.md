@@ -75,7 +75,7 @@ WHERE NAME IS NOT NULL;
 >고객 ID를 기준으로 내림차순 검색
 ```SQL
 SELECT *
-FROM Customer
+FROM CUSTOMER
 ORDER BY ID DESC;
 ```
 
@@ -273,12 +273,14 @@ NULLIF(대상1, 대상2) | 대상이 같으면 NULL 반환, 다르면 대상1 �
 CASE문 | 조건별 치환 및 연산 수행 | 
 
 
-### CASE문
->CASE 대소비교
+>CASE문 예제
 ```SQL
-SELECT *
-FROM Customer
-ORDER BY ID DESC;
+SELECT SALE
+    CASE WHEN SALE < 200 THEN 'A'
+    CASE WHEN SALE < 300 THEN 'B'
+                         ELSE 'C'
+    END AS GRADE
+FROM TRANSACTION;
 ```
 
 
