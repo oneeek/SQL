@@ -283,7 +283,7 @@ SELECT SALE,
 FROM TRANSACTION;
 ```
 
-*같은 대상에 대해 일치하는 조건일 때, 아래코드도 동일한 결과 반환
+*같은 대상에 대해 일치하는 조건일 때, 아래 코드도 동일한 결과 반환
 ```SQL
 SELECT SALE,
        CASE SALE WHEN 200 THEN 'A'
