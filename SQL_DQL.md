@@ -70,7 +70,10 @@ NULL | IS NULL, IS NOT NULL
 - ORACLE은 문자 상수 대소문자 구분 (MSSQL은 대소문자 구분 X)
 
 
-> IN
+> **IN** <br/>
+> 여러 상수와 일치하는 조건 전달 시 사용 <br/>
+> 상수를 괄호로 묶어서 동시에 전달 <br/>
+
 ```SQL
 SELECT SALE,
 FROM TRANSACTION
@@ -83,6 +86,24 @@ FROM TRANSACTION
 WHERE ID IN ('001', '002');
 ```
 
+> **BETWEEN a AND b** <br/>
+> 범위로 묶을 수 있는 문자, 숫자, 날짜 모두 가능 <br/>
+> 반드시 A가 B보다 작아야 함. 반대로 작성 시 아무것도 출력 X <br/>
+
+
+> **LIKE** <br/>
+> % : 자수 제한 없는 모든 값 <br/>
+> _ : _ 하나당 한 자릿수의 모든 값 <br/>
+
+
+> **LIKE** <br/>
+> % : 자수 제한 없는 모든 값 <br/>
+
+
+> **NOT** <br/>
+> 조건 결과의 여집합 <br/>
+> NOT IN, NOT BETWEEN a AND b, NOT LIKE, NOT NULL로 주로 사용 <br/>
+
 
 > 프로그래머스 <이름이 있는 동물의 아이디>
 ```SQL
@@ -93,6 +114,17 @@ WHERE NAME IS NOT NULL;
 
 
 ### ORDER BY
+
+- ORDER BY 뒤에 명시된 순서대로 정렬
+- SELECT에서 정의한 컬럼 별칭 사용 가능 (유일)
+- SELECT에 선언된 순서대로 숫자 전달 가능 (컬럼명과 숫자 혼합 사용 가능)
+
+
+>**NULL 정렬** <br/>
+> 기본적으로 ORACLE은 NULL 마지막 배치, SQL Server는 처음 배치 <br/>
+> ORACLE은 NULLS LAST, LULLS FIRST로 NULL 정렬 순서 변경 가능
+
+
 >고객 ID를 기준으로 내림차순 검색
 ```SQL
 SELECT *
@@ -102,6 +134,12 @@ ORDER BY ID DESC;
 
 
 ### GROUP BY/HAVING
+
+- 그룹 연산에서 제외할 대상이 있다면 WHERE에서 미리 제외
+- 그룹에 대한 조건은 WHERE에서 사용 X
+- GROUP BY를 사용하면 데이터가 요약되므로, 요약 전 데이터와 함께 출력 X
+
+
 > 프로그래머스 <노선별 평균 역 사이 거리 조회하기>
 ```SQL
 SELECT ROUTE,  
@@ -111,6 +149,8 @@ FROM SUBWAY_DISTANCE
 GROUP BY ROUTE
 ORDER BY ROUND(SUM(D_BETWEEN_DIST), 1) DESC;
 ```
+
+
 
 ### 함수
 > 문자형 함수
