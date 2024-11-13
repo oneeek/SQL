@@ -302,6 +302,33 @@ FROM TRANSACTION;
 5. SELF JOIN : 하나의 테이블을 두 번 이상 참조하여 연결
 
 
+> **ANSI 표준**
+> INNER JOIN, OUTER JOIN, NATURAL JOIN, CROSS JOIN
+> INNER JOIN의 경우 FROM에 INNER JOIN, JOIN을 명시
+> USING, ON 조건 필수 사용
+
+```SQL
+# ON, JOIN 할 컬럼명이 달라도 사용 가능 (컬럼명이 같은 경우 테이블 출처 명확히)
+ 
+SELECT ENP.ENAME, DEPT.DNAME
+FROM EMP JOIN DEPT
+ON ENP.DEPTNO = DEPT.DEPTNO;
+```
+
+```SQL
+# USING, JOIN 할 컬럼명이 같을 때 사용 가능 (괄호 필수)
+ 
+SELECT ENP.ENAME, DEPT.DNAME
+FROM EMP JOIN DEPT
+USING (DEPTNO);
+```
+
+
+
+> **ORACLE 표준**
+> INNER JOIN이 기본 (,로 나열)
+
+
 ```SQL
 SELECT SALE,
        CASE SALE WHEN 200 THEN 'A'
