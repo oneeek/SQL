@@ -298,14 +298,13 @@ FROM TRANSACTION;
    2. OUTER JOIN : JOIN 조건이 성립하지 않는 데이터도 출력 (LEFT/RIGHT/FULL)
 
 3. NATURAL JOIN : JOIN 조건 생략 시 두 테이블의 같은 컬럼명으로 자연 연결
-4. CROSS JOIN : JOIN 조건 생략 시 두 테이블의 발생 가능한 모든 행을 출력
+4. CROSS JOIN : JOIN 조건 생략 시 두 테이블의 발생 가능한 모든 행을 출력, Cartesian product(카타시안곱)
 5. SELF JOIN : 하나의 테이블을 두 번 이상 참조하여 연결
 
 
-> **ANSI 표준**
-> INNER JOIN, OUTER JOIN, NATURAL JOIN, CROSS JOIN
-> INNER JOIN의 경우 FROM에 INNER JOIN, JOIN을 명시
-> USING, ON 조건 필수 사용
+> **ANSI 표준** <br/>
+> INNER JOIN의 경우 FROM에 INNER JOIN, JOIN을 명시 <br/>
+> USING, ON 조건 필수 사용 <br/>
 
 ```SQL
 # ON, JOIN 할 컬럼명이 달라도 사용 가능 (컬럼명이 같은 경우 테이블 출처 명확히)
@@ -323,19 +322,21 @@ FROM EMP JOIN DEPT
 USING (DEPTNO);
 ```
 
+```SQL
+# NATURAL JOIN, 컬럼명이 같은 모든 컬럼을 JOIN에 사용하므로 주의
+ 
+SELECT ENP.ENAME, DEPT.DNAME
+FROM EMP NATURAL JOIN DEPT;
+```
 
 
-> **ORACLE 표준**
-> INNER JOIN이 기본 (,로 나열)
+> **ORACLE 표준** <br/>
+> INNER JOIN이 기본 ( ,로 나열) <br/>
+> FULL OUTER JOIN 없음 (LEFT/RIGHT OUTER JOIN 결과의 UNION 연산과 동일)
 
 
 ```SQL
-SELECT SALE,
-       CASE SALE WHEN 200 THEN 'A'
-                 WHEN 300 THEN 'B'
-                          ELSE 'C'
-       END AS GRADE
-FROM TRANSACTION;
+
 ```
 
 
