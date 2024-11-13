@@ -281,11 +281,30 @@ FROM TRANSACTION;
 ```
 
 
-
 ### JOIN
-> 문자형 함수
+
+- 여러 테이블의 데이터를 사용하여 동시 출력 및 참조할 때 사용
+- FROM에 테이블명 나열 (ORACLE표준은 테이블 나열 순서 중요 X, ANSI표준은 OUTER JOIN시 순서 중요)
+- WHERE에 JOIN 조건 작성
+- 동일한 컬럼명이 여러 테이블에 존재할 경우 컬럼명 앞에 테이블 이름 명시
+- N개의 테이블을 JOIN하려면 최소 N-1개 조건 필요
+
+1. 조건 형태
+   1. EQUI JOIN
+   2. NON EQUI JOIN
+3. JOIN 결과
+   1. INNER JOIN
+   2. OUTER JOIN
 
 
+```SQL
+SELECT SALE,
+       CASE SALE WHEN 200 THEN 'A'
+                 WHEN 300 THEN 'B'
+                          ELSE 'C'
+       END AS GRADE
+FROM TRANSACTION;
+```
 
 
 
