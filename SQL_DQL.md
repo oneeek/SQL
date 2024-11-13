@@ -126,8 +126,9 @@ WHERE NAME IS NOT NULL;
 > ORACLE은 NULLS LAST, LULLS FIRST로 NULL 정렬 순서 변경 가능
 
 
->고객 ID를 기준으로 내림차순 검색
 ```SQL
+# 고객 ID를 기준으로 내림차순 검색
+ 
 SELECT *
 FROM CUSTOMER
 ORDER BY ID DESC;
@@ -336,7 +337,7 @@ NULLIF(대상1, 대상2) | 대상이 같으면 NULL 반환, 다르면 대상1 �
 CASE문 | 조건별 치환 및 연산 수행 | 
 
 
->CASE문 예제
+- CASE문 예제
 ```SQL
 SELECT SALE,
        CASE WHEN SALE = 200 THEN 'A'
