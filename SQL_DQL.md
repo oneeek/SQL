@@ -282,7 +282,8 @@ FROM TRANSACTION;
 
 
 
-
+### JOIN
+> 문자형 함수
 
 
 
