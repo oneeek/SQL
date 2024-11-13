@@ -56,12 +56,33 @@ FROM FISH_INFO;
 
 구분|종류
 :---:|:---:
-비교 | =, <>, <, <=, >, >=
-범위 | BETWEEN
+비교 | =, <>(!=), <, <=, >, >=
+범위 | BETWEEN a AND b
 집합 | IN, NOT IN
 패턴 | LIKE
 NULL | IS NULL, IS NOT NULL
 복합 | AND, OR, NOT
+
+
+- AND, OR로 여려 조건 연결 가능
+- 조건 비교 대상의 데이터 타입 일치하는 것이 좋음
+- 문자나 날짜 표현 시 반드시 홑따옴표 사용
+- ORACLE은 문자 상수 대소문자 구분 (MSSQL은 대소문자 구분 X)
+
+
+> IN
+```SQL
+SELECT SALE,
+FROM TRANSACTION
+WHERE ID = '001'
+OR ID = '002';
+```
+```SQL
+SELECT SALE,
+FROM TRANSACTION
+WHERE ID IN ('001', '002');
+```
+
 
 > 프로그래머스 <이름이 있는 동물의 아이디>
 ```SQL
