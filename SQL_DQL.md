@@ -284,17 +284,22 @@ FROM TRANSACTION;
 ### JOIN
 
 - 여러 테이블의 데이터를 사용하여 동시 출력 및 참조할 때 사용
-- FROM에 테이블명 나열 (ORACLE표준은 테이블 나열 순서 중요 X, ANSI표준은 OUTER JOIN시 순서 중요)
+- FROM에 테이블명 나열 (ORACLE 표준은 테이블 나열 순서 중요 X, ANSI 표준은 OUTER JOIN시 순서 중요)
 - WHERE에 JOIN 조건 작성
 - 동일한 컬럼명이 여러 테이블에 존재할 경우 컬럼명 앞에 테이블 이름 명시
 - N개의 테이블을 JOIN하려면 최소 N-1개 조건 필요
 
 1. 조건 형태
-   1. EQUI JOIN
-   2. NON EQUI JOIN
-3. JOIN 결과
-   1. INNER JOIN
-   2. OUTER JOIN
+   1. EQUI JOIN : JOIN 조건이 동등 조건인 경우
+   2. NON EQUI JOIN : JOIN 조건이 동등 조건이 아닌 경우
+ 
+2. JOIN 결과
+   1. INNER JOIN : JOIN 조건이 성립하는 데이터만 출력
+   2. OUTER JOIN : JOIN 조건이 성립하지 않는 데이터도 출력 (LEFT/RIGHT/FULL)
+
+3. NATURAL JOIN : JOIN 조건 생략 시 두 테이블의 같은 컬럼명으로 자연 연결
+4. CROSS JOIN : JOIN 조건 생략 시 두 테이블의 발생 가능한 모든 행을 출력
+5. SELF JOIN : 하나의 테이블을 두 번 이상 참조하여 연결
 
 
 ```SQL
