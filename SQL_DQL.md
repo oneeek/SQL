@@ -28,25 +28,28 @@ ORDER BY 컬럼명 [ASC/DESC]
 
 ```SQL
 # 여러 컬럼 조회
+ 
 SELECT 컬럼1, 컬럼2
 FROM 테이블;
 ```
 
-> 모든 컬럼 조회
 ```SQL
+# 모든 컬럼 조회
+ 
 SELECT *
 FROM 테이블;
 ```
 
-> 중복 없이 컬럼 조회
 ```SQL
+# 중복 없이 컬럼 조회
+ 
 SELECT DISTINCT 컬럼
 FROM 테이블;
 ```
 
-
-> 프로그래머스 <잡은 물고기의 평균 길이 구하기>
 ```SQL
+# 프로그래머스 <잡은 물고기의 평균 길이 구하기>
+ 
 SELECT ROUND(AVG(IFNULL(LENGTH, 10)),2) AS AVERAGE_LENGTH
 FROM FISH_INFO;
 ```
@@ -102,8 +105,9 @@ WHERE ID IN ('001', '002');
 > NOT IN, NOT BETWEEN a AND b, NOT LIKE, NOT NULL로 주로 사용 <br/>
 
 
-> 프로그래머스 <이름이 있는 동물의 아이디>
 ```SQL
+# 프로그래머스 <이름이 있는 동물의 아이디>
+ 
 SELECT ANIMAL_ID
 FROM ANIMAL_INS
 WHERE NAME IS NOT NULL;
@@ -137,8 +141,9 @@ ORDER BY ID DESC;
 - GROUP BY를 사용하면 데이터가 요약되므로, 요약 전 데이터와 함께 출력 X
 
 
-> 프로그래머스 <노선별 평균 역 사이 거리 조회하기>
 ```SQL
+#  프로그래머스 <노선별 평균 역 사이 거리 조회하기>
+ 
 SELECT ROUTE,  
 CONCAT(ROUND(SUM(D_BETWEEN_DIST), 1),'km') AS TOTAL_DISTANCE, 
 CONCAT(ROUND(AVG(D_BETWEEN_DIST), 2), 'km') AS AVERAGE_DISTANCE
