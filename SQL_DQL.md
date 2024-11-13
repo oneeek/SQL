@@ -25,8 +25,9 @@ ORDER BY 컬럼명 [ASC/DESC]
 
 
 ### SELECT/FROM
-> 여러 컬럼 조회
+
 ```SQL
+# 여러 컬럼 조회
 SELECT 컬럼1, 컬럼2
 FROM 테이블;
 ```
