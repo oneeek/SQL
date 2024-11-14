@@ -109,14 +109,22 @@ WHEN NOT MATCHED THEN
 
 
 
-### INSERT
+### COMMIT
 
-- 한 번에 한 행만 입력 가능(SQL Server는 여러 행 동시 입력 가능)
-- 하나의 컬럼에는 한 값만 입력 가능
-
+- 데이터 저장, COMMIT을 수행하면 COMMIT 이전 수행된 DML은 모두 저장되며 되돌릴 수 없음
 
 
+### ROLLBACK
 
+- 데이터 변경 취소, 최종 COMMIT 시점 이전까지 원복 가능
+- SAVEPOINT를 설정하여 최종 COMMIT 이후 원하는 시점으로의 원복 가능
+- SAVEPOINT 이전 수행한 UPDATE는 취소되지 않음
+
+```SQL
+# SAVEPOINT 설정
+
+SAVEPOINT savepoint_name;
+```
 
 
 
