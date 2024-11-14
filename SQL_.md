@@ -167,9 +167,13 @@ NUMBER(p, s) | 사이즈 생략 가능, 숫자형으로 p는 총 자릿수/ s는
 DATE | 사이즈 전달 불가, 날짜형
 
 - SQL Server <br/>
-  VARCHAR2 > VARCHAR
-  NUMBER > NUMERIC
-  문자타입 사이즈 생략 가능 (생략 시 1)
+  VARCHAR2 > VARCHAR <br/>
+  NUMBER > NUMERIC <br/>
+  문자타입 사이즈 생략 가능 (생략 시 1) <br/>
+
+
+
+
 
 
 
