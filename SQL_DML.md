@@ -73,6 +73,18 @@ DELETE[FROM] 테이블명
 ```
 
 
+### MERGE
+
+- 참조 테이블과 동일하게
+- INSERT, UPDATE, DELETE 동시 수행
+
+
+```SQL
+# 문법
+
+
+```
+
 
 
 
