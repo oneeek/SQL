@@ -13,12 +13,8 @@
 
 
 ## DML
-```SQL
-INSERT INTO 데이터;
-UPDATE
-DELETE
-MERGE
-```
+
+- [x] 종류 : INSERT, UPDATE, DELETE, MERGE
 - [x] 저장(COMMIT) 혹은 취소(ROLLBACK) 반드시 필요
 
 
@@ -36,3 +32,33 @@ MERGE
 INSERT INTO 테이블명 VALUES(값1, 값2, ...);
 INSERT INTO 테이블명(컬럼1, 컬럼2) VALUES(값1, 값2);
 ```
+
+
+### UPDATE
+
+- 컬럼 단위, 다중 컬럼 수정 가능
+
+
+```SQL
+# 단일컬럼 수정
+
+UPDATE 테이블명
+SET 수정할컬럼명 = 수정값
+WHERE 조건;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
