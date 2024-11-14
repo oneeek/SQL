@@ -463,8 +463,8 @@ CREATE [OR REPLACE] [PUBLIC] SYNONYM 별칭 FOR 테이블명;
 
 ## DCL
 
-- [x] 종류 : INSERT, UPDATE, DELETE, MERGE
-- [x] 저장(COMMIT) 혹은 취소(ROLLBACK) 반드시 필요
+- [x] 객체에 대한 권한을 부여(GRANT), 회수(REVOKE)
+- [x] 테이블 소유자는 타계정에 테이블 조회 및 수정 권한 부여 및 회수 가
 
 
 
