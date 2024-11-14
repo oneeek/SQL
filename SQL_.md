@@ -342,6 +342,20 @@ INSERT INTO TEST VALUES(3, NULL);
 ```
 
 
+3. NOT NULL
+   - 다른 제약조건과 달리 CTAS로 복제 시 속성 복사 O
+   - 컬럼 생성 시 NOT NULL을 선언하지 않으면 Nullable 컬럼으로 생성
+   - 이미 만들어진 컬럼에 NOT NULL 선언 시 컬럼 수정(MODIFY)으로 해결
+
+```SQL
+# NOT NULL 선언
+
+ALTER TABLE TEST ADD NOT NULL(COL12); #불가
+ALTER TABLE TEST MODIFY COL12 NOT NULL;
+ALTER TABLE TEST MODIFY COL12
+                 CONSTRAINT TEST_COL12_NN NOT NULL;
+```
+
 
 
 
