@@ -219,7 +219,8 @@ ALTER TABLE 테이블명 ADD (컬럼명1 데이터타입, 컬럼명2 데이터�
 ```SQL
 # 문법
 
-ALTER TABLE 테이블명 MODIFY (컬럼명1 데이터타입(사이즈), 컬럼명2 데이터타입(사이즈) [DEFAULT]);
+ALTER TABLE 테이블명 MODIFY (컬럼명1 데이터타입(사이즈), 컬럼명2 데이터타입(사이즈));
+ALTER TABLE 테이블명 MODIFY (컬럼명 DEFAULT DEFAULT값);
 ```
 
 > **`DEFAULT` : 값이 생략될 때 자동으로 부여되는 값** <br/>
