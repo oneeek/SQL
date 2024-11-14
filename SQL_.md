@@ -414,12 +414,39 @@ ALTER TABLE EMP ADD CONSTRAINT EMP_SAL_CK CHECK (SAL > 0);
 ```
 
 
+> **VIEW**
+```SQL
+# VIEW 생성 및 조회
+
+CREATE VIEW VIEW_EMP_DEPT
+AS
+SELECT E.EMPNO, E.ENAME, E.SAL, E.DEPTNO, D.DNAME
+FROM EMP E, DEPT D
+WHERE E.DEPTNO = D.DEPTNO;
+
+SELECT *
+FROM VIEW_EMP_DEPT;
 
 
+# VIEW 삭제
+
+DROP VIEW VIEW_EMP_DEPT;
+```
 
 
+> **SEQUENCE**, 연속적인 숫자 자동 부여 객체
+```SQL
+# 문법
 
-
+CREATE SEQUENCE 시퀀스명
+INCREMENT BY #증가값 (DEFAULT 1)
+START WITH #시작값 (DEFAULT 1)
+MAXVALUE #마지막값(증가시퀀스), 시작값(감소시퀀스)
+MINVALUE #시작값(증가시퀀스), #마지막값(감소시퀀스)
+CYCLE | NOCYCLE #시퀀스 번호 재사용 (DEFAULT NOCYCLE)
+CACHE N #캐시값  (DEFAULT 20)
+;
+```
 
 
 
