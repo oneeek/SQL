@@ -63,6 +63,14 @@ WHERE 조건;
 ```
 
 
+### DELETE
+
+```SQL
+# 문법
+
+DELETE[FROM] 테이블명
+[WHERE 조건];
+```
 
 
 
