@@ -75,14 +75,22 @@ DELETE[FROM] 테이블명
 
 ### MERGE
 
-- 참조 테이블과 동일하게
+- 참조 테이블과 동일하게 맞추기(참조 테이블의 값으로 수정 등)
 - INSERT, UPDATE, DELETE 동시 수행
 
 
 ```SQL
 # 문법
 
-
+MERGE INTO 테이블명
+USING 참조테이블명
+ON (연결조건)   #괄호필수
+WHEN MATCHED TEHN
+     UPDATE
+     SET 수정내용
+     DELETE (조건)
+WHEN NOT MATCHED THEN
+     INSERT VALUES(값1, 값2, ...);
 ```
 
 
