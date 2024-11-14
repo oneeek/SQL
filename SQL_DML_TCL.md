@@ -98,14 +98,14 @@ WHEN NOT MATCHED THEN
 ## TCL
 
 - [x] DML에 의해 조작된 결과를 제어하는 명령어, DML 수행 후 트랜잭션을 정상 종료하지 않는 경우 LOCK 발생
-- [x] 분할 할 수 없는 최소 단위, ALL OR NOTHING
+- [x] 분할 할 수 없는 최소 단위 (ALL OR NOTHING)
 
 
 - **특징**
-  원자성: 
-  일관성: 
-  고립성: 
-  지속성: 
+  원자성: <br/>
+  일관성: <br/>
+  고립성: <br/>
+  지속성: <br/>
 
 
 
