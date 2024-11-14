@@ -519,6 +519,7 @@ REVOKE SELECT, UPDATE, INSERT ON EMP FROM HR, BI;
 ### ROLE
 
 - 권한의 묶음, 생성 가능 객체
+- 재접속해야 권한 부여
 
 ```SQL
 # 문법
