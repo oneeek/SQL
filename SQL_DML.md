@@ -84,8 +84,8 @@ DELETE[FROM] 테이블명
 
 MERGE INTO 테이블명
 USING 참조테이블명
-ON (연결조건)   #괄호필수
-WHEN MATCHED TEHN
+ON (연결조건) #괄호필수
+WHEN MATCHED THEN
      UPDATE
      SET 수정내용
      DELETE (조건)
