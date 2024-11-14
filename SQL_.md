@@ -150,4 +150,12 @@ CREATE TABLE [소유자.]테이블명(
 );
 ```
 
+```SQL
+# 테이블 복제 문법
+
+CREATE TABLE 테이블명
+AS
+SELECT * FROM 복제테이블명;
+```
+
 
