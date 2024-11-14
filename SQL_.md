@@ -483,10 +483,64 @@ CREATE [OR REPLACE] [PUBLIC] SYNONYM 별칭 FOR 테이블명;
 - 동시에 여러 객체 권한 부여 불가
 
 ```SQL
-# 문법
+# 오브젝트 권한
 
 GRANT 권한 ON 테이블명 TO 유저명;
+
+GRANT SELECT ON EMP TO HR;
+GRANT SELECT ON EMP TO HR, BI;
+GRANT SELECT, UPDATE, INSERT ON EMP TO HR, BI;
+GRANT SELECT ON EMP, DEPT TO HR; #에러
 ```
+
+```SQL
+# 시스템 권한
+
+GRANT CREATE TABLE TO HR;
+GRANT CREATE TABLE, DROP ANY TABLE TO HR, BI;
+```
+
+
+### REVOKE
+
+- 동시에 여러 권한 회수 가능
+- 동시에 여러 유저 권한 회수 가능
+
+```SQL
+# 문법
+
+REVOKE 권한 ON 테이블명 FROM 유저명;
+
+REVOKE SELECT ON EMP FROM HR;
+REVOKE SELECT, UPDATE, INSERT ON EMP FROM HR, BI;
+```
+
+
+### ROLE
+
+- 권한의 묶음, 생성 가능 객체
+
+```SQL
+# 문법
+
+CREATE ROLE 롤명;
+```
+
+```SQL
+# 생성 및 부여
+
+CREATE ROLE ROLE_SET;
+
+GRANT SELECT ON EMP TO ROLE_SET;
+GRANT SELECT ON DEPT TO ROLE_SET;
+
+GRANT ROLE_SET TO HR;
+```
+
+
+
+
+
 
 
 
