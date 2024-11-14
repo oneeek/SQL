@@ -251,6 +251,44 @@ ALTER TABLE 테이블명 DROP COLUMN 컬럼명;
 ```
 
 
+### DROP
+
+- 객체(테이블, 인덱스 등) 삭제
+- DROP 후 조회 불가
+
+```SQL
+# 문법, PURGE로 삭제 시 RECYCLEBIN에서 조회 불가
+
+DROP TABLE 테이블명 [PURGE];
+```
+
+
+### TRUNCATE
+
+- 테이블 구조 남기고 데이터는 즉시 삭제, 즉시 반영(AUTO COMMIT)
+- RECYCLEBIN에 남지 않음
+- TRUNCATE 후 조회 가능, 데이터는 없음
+
+```SQL
+# 문법
+
+TRUNCATE TABLE 테이블명;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
