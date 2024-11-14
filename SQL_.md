@@ -357,6 +357,21 @@ ALTER TABLE TEST MODIFY COL12
 ```
 
 
+4. FOREIGN KEY
+   - 참조테이블의 참조컬럼에 있는 데이터를 확인하면서 본테이블의 데이터를 관리할 목적
+   - 반드시 참조(부모)테이블의 참조컬럼(REFERENCE KEY)이 사전에 PK 혹은 UNIQUE KEY를 가져야 함!
+
+```SQL
+# 문법
+
+CREATE TABLE 테이블명(
+컬럼1 데이터타입 [DEFAULT 기본값] REFERENCES 참조테이블(참조키),
+...
+);
+```
+
+
+
 
 
 
