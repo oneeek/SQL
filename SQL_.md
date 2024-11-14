@@ -222,7 +222,7 @@ ALTER TABLE 테이블명 ADD (컬럼명1 데이터타입, 컬럼명2 데이터�
 ALTER TABLE 테이블명 MODIFY (컬럼명1 데이터타입(사이즈), 컬럼명2 데이터타입(사이즈));
 ```
 
-> **`DEFAULT`** : 값이 생략될 때 자동으로 부여되는 값
+> **`DEFAULT`** : 값이 생략될 때 자동으로 부여되는 값 <br/>
 > INSERT 시 NULL을 직접 입력하면, DEFAULT값 대신 NULL 입력 <br/>
 > 이미 데이터가 존재하는 테이블에 DEFAULT값 선언 시, 기존 데이터는 수정 X <br/>
 > DEFAULT값 해제 시, DEFAULT값을 NULL로 선언 <br/>
