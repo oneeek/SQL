@@ -442,7 +442,7 @@ CREATE SEQUENCE 시퀀스명
 INCREMENT BY #증가값 (DEFAULT 1)
 START WITH #시작값 (DEFAULT 1)
 MAXVALUE #마지막값(증가시퀀스), 시작값(감소시퀀스)
-MINVALUE #시작값(증가시퀀스), #마지막값(감소시퀀스)
+MINVALUE #시작값(증가시퀀스), 마지막값(감소시퀀스)
 CYCLE | NOCYCLE #시퀀스 번호 재사용 (DEFAULT NOCYCLE)
 CACHE N #캐시값  (DEFAULT 20)
 ;
