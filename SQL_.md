@@ -279,7 +279,18 @@ TRUNCATE TABLE 테이블명;
 - 데이터 무결성을 위해 컬럼에 생성하는 데이터의 제약 장치
 - 테이블 생성 시 정의 가능, 컬럼 추가 시 정의 가능, 이미 생성된 컬럼에 제약조건만 추가 가능
 
+1. PRIMARY KEY(기본키)
+   - 유일한 식별자, 테이블당 1개
+   - UNIQUE + NOT NULL (중복, NULL 허용 X)
+   - 여러 컬럼을 결합하여 기본키 생성 가능
+   - PRIMARY KEY 생성 시 NOT NULL 속성 자동 부여 But, CTAS로 테이블 복사 시 속성 복사 X (NOT NULL 속성 직접 정의해야 복사 O)
+   - PRIMARY KEY 생성 시 UNIQUE INDEX 자동 생성
 
+```SQL
+# 문법
+
+TRUNCATE TABLE 테이블명;
+```
 
 
 
