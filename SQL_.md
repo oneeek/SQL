@@ -271,6 +271,10 @@ TRUNCATE TABLE 테이블명;
 
 
 - [x] **`DEFAULT`**
+      - 값이
+
+
+
       - 값이 생략될 때 자동으로 부여되는 값
       - INSERT에서 NULL 직접 입력 시, DEFAULT값 대신 NULL 입력
       - 이미 데이터가 존재하는 테이블에 DEFAULT값 선언 시, 기존 데이터는 수정 X
