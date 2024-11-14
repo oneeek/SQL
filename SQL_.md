@@ -414,7 +414,7 @@ ALTER TABLE EMP ADD CONSTRAINT EMP_SAL_CK CHECK (SAL > 0);
 ```
 
 
-> **VIEW**
+> **VIEW**, 테이블처럼 조회 가능(물리적 저장 X)
 ```SQL
 # VIEW 생성 및 조회
 
@@ -439,14 +439,39 @@ DROP VIEW VIEW_EMP_DEPT;
 # 문법
 
 CREATE SEQUENCE 시퀀스명
-INCREMENT BY #증가값 (DEFAULT 1)
-START WITH #시작값 (DEFAULT 1)
+INCREMENT BY #증가값(DEFAULT 1)
+START WITH #시작값(DEFAULT 1)
 MAXVALUE #마지막값(증가시퀀스), 시작값(감소시퀀스)
 MINVALUE #시작값(증가시퀀스), 마지막값(감소시퀀스)
-CYCLE | NOCYCLE #시퀀스 번호 재사용 (DEFAULT NOCYCLE)
-CACHE N #캐시값  (DEFAULT 20)
+CYCLE | NOCYCLE #시퀀스 번호 재사용(DEFAULT NOCYCLE)
+CACHE N #캐시값(DEFAULT 20)
 ;
 ```
+
+
+> **SYNONYM**, 테이블 별칭 생성
+```SQL
+# 문법
+
+CREATE [OR REPLACE] [PUBLIC] SYNONYM 별칭 FOR 테이블명;
+```
+- OR REPLACE : 기존의 같은 이름 SYNONYM이 생성되어 있는 경우 대체
+- PUBLIC : 생성한 SYNONYM 누구나 사용 가능 (반드시 PUBLIC으로 삭제)
+
+
+
+
+## DCL
+
+- [x] 종류 : INSERT, UPDATE, DELETE, MERGE
+- [x] 저장(COMMIT) 혹은 취소(ROLLBACK) 반드시 필요
+
+
+
+
+
+
+
 
 
 
