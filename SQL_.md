@@ -229,8 +229,26 @@ ALTER TABLE 테이블명 MODIFY (컬럼명 DEFAULT DEFAULT값);
 > DEFAULT값 해제 시, DEFAULT값을 NULL로 선언 <br/>
 
 
-3. 
+3. 컬럼 이름 변경
+   - 항상 가능
+   - 동시 이름 변경 불가
 
+```SQL
+# 문법
+
+ALTER TABLE 테이블명 RENAME COLUMN 기존컬럼명 TO 새컬럼명;
+```
+
+
+3. 컬럼 삭제
+   - 항상 가능
+   - 동시 삭제 불가
+
+```SQL
+# 문법
+
+ALTER TABLE 테이블명 DROP COLUMN 컬럼명;
+```
 
 
 
