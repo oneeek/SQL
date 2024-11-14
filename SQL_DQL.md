@@ -373,8 +373,8 @@ AND S.GRADE IN (1, 4);
 \n | New line
 ^ | 시작 글자 (^a)
 $ | 마지막 글자 (a$)
-\ | Escape character, 뒤에 기호 의미 제거
- | | 또는
+\ | Escape character, 뒤에 기호 의미 제거 
+| | 또는
 · | 엔터를 제외한 모든 한 글자
 [ab] | a 또는 b의 한 글자
 [^ab] | a와 b 제외한 모든 문자
