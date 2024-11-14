@@ -408,7 +408,7 @@ DELETE DEPT WHERE DEPTNO = 10; #부모데이터 삭제 시, 자식데이터 NULL
    - 직접 데이터의 값 제한
 
 ```SQL
-# CHECK 제약조건 추가 (EMP의 SAL 값은 0 이상 )
+# CHECK 제약조건 추가 (EMP의 SAL 값은 0 이상)
 
 ALTER TABLE EMP ADD CONSTRAINT EMP_SAL_CK CHECK (SAL > 0);
 ```
