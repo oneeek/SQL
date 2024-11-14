@@ -222,7 +222,7 @@ ALTER TABLE 테이블명 ADD (컬럼명1 데이터타입, 컬럼명2 데이터�
 ALTER TABLE 테이블명 MODIFY (컬럼명1 데이터타입(사이즈), 컬럼명2 데이터타입(사이즈));
 ```
 
-`**DEFAULT**`: 
+**`DEFAULT`** : 
 
 3. 
 
