@@ -521,6 +521,7 @@ REVOKE SELECT, UPDATE, INSERT ON EMP FROM HR, BI;
 - 권한의 묶음, 생성 가능 객체
 - 재접속해야 권한 부여
 - ROLE에서 회수된 권한은 즉시 반영되므로, ROLE 재부여 필요 없음
+- ROLE을 통해 부여한 권한은 직접 회수 불가, ROLE을 통한 회수만 가능
 
 ```SQL
 # 문법
