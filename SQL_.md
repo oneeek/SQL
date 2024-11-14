@@ -218,7 +218,7 @@ ALTER TABLE 테이블명 ADD (컬럼명1 데이터타입, 컬럼명2 데이터�
 # 문법
 
 ALTER TABLE 테이블명 MODIFY (컬럼명1 데이터타입(사이즈), 컬럼명2 데이터타입(사이즈));
-ALTER TABLE 테이블명 MODIFY (컬럼명 DEFAULT DEFAULT값);
+ALTER TABLE 테이블명 MODIFY (컬럼명 DEFAULT 기본값);
 ```
 
 3. 컬럼 이름 변경
@@ -287,14 +287,22 @@ TRUNCATE TABLE 테이블명;
    - PRIMARY KEY 생성 시 UNIQUE INDEX 자동 생성
 
 ```SQL
-# 문법
+# 테이블 생성 시 제약조건 생성(이름 없이)
 
-TRUNCATE TABLE 테이블명;
+CREATE TABLE TEST(NO NUMBER(10) PRIMARY KEY,
+                  NAME VARCHAR2(20));
 ```
 
+```SQL
+# 테이블 생성 시 제약조건 생성(이름 전달)
 
-
-
+CREATE TABLE TEST(
+NO1 NUMBER,
+NO2 NUMBER,
+NAME VARCHAR2(20),
+CONSTRAINT TEST_PK PRIMARY KEY(NO1, NO2)
+);
+```
 
 
 
