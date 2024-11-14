@@ -128,6 +128,15 @@ SAVEPOINT savepoint_name;
 
 
 
+## DDL
+
+- [x] 종류 : CREATE(객체 생성), ALTER(객체 변경), DROP(객체 삭제), TRUNCATE(데이터 전부 삭제)
+- [x] AUTO COMMIT, 명령어 수행 시 즉시 저장(원복 불가)
+
+
+### CREATE
+
+- 데이터 저장, COMMIT을 수행하면 COMMIT 이전 수행된 DML은 모두 저장되며 되돌릴 수 없음
 
 
 
