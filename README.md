@@ -2,4 +2,3 @@
 
 개정판 강의 : 
 [홍쌤의 데이터랩](https://www.youtube.com/@hdatalab)
-[이기적 영진닷컴](https://www.youtube.com/watch?v=lxiEiAjp7d0&list=PL6i7rGeEmTvpLoDkB-kECcuD1zDt_gaPn)
