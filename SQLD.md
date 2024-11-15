@@ -36,7 +36,7 @@
 
 ## 🤔
 
-### SQL 종류와 명령어 연결
+### SQL 명령어 종류
 
 - **DDL** : CREATE, ALTER, DROP, TRUNCATE
 - **DML** : INSERT, DELETE, UPDATE, MERGE
