@@ -38,6 +38,13 @@
 
 ### SQL 종류와 명령어 연결
 
+- **DDL** : CREATE, ALTER, DROP, TRUNCATE
+- **DML** : INSERT, DELETE, UPDATE, MERGE
+- **DCL** : GRANT, REVOKE
+- **TCL** : COMMIT, ROLLBACK
+- **DQL** : SELECT
+
+
 ### 정규화
 
 ### EXIST
