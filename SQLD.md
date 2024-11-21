@@ -47,16 +47,16 @@
 
 ### 정규화
 
-- 제 1정규형 : **1NF** (First Normal Form)
+- 제 1정규형 : **1NF** (First Normal Form) <br/>
 테이블의 컬럼이 원자값(Atomic Value, 하나의 값)을 갖도록 테이블을 분해하는 것 <br/>
 
 
-- 제 2정규형 : **2NF** (Second Normal Form)
+- 제 2정규형 : **2NF** (Second Normal Form) <br/>
 제1 정규화를 진행한 테이블에 대해 완전 함수 종속을 만족하도록 테이블을 분해하는 것 <br/>
 완전 함수 종속 = 기본 키의 부분집합이 결정자가 되어서는 안 됨 <br/>
 
 
-- 제 3정규형 : **3NF** (Third Normal Form)
+- 제 3정규형 : **3NF** (Third Normal Form) <br/>
 제2 정규화를 진행한 테이블에 대해 이행적 종속을 없애도록 테이블을 분해하는 것 <br/>
 이행적 종속 = A→B, B→C가 성립할 때, A→C가 성립되는 것
 
